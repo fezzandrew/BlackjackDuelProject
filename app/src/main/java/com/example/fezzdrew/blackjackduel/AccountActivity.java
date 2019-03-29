@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import org.w3c.dom.Text;
+
 public class AccountActivity extends AppCompatActivity {
 
     @Override
@@ -20,5 +22,6 @@ public class AccountActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+
     }
 }
