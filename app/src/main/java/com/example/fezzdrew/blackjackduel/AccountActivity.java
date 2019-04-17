@@ -10,6 +10,9 @@ import org.w3c.dom.Text;
 
 public class AccountActivity extends AppCompatActivity {
 
+    private String playerName;
+    private int playerBalance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

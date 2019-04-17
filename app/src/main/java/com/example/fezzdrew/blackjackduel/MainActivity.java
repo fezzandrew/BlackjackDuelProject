@@ -19,12 +19,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         //database
         db = new AccountDbHelper(this);
         boolean insert = db.insertInAccount("TestAccount", "1000");
-        if (insert==true){
-            Toast.makeText(getApplicationContext(), "Successful insertion", Toast.LENGTH_SHORT).show();
-        }
+        //if (insert==true){
+          //  Toast.makeText(getApplicationContext(), "Successful insertion", Toast.LENGTH_SHORT).show();
+        //}
         //database end
 
         //menu buttons
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(accountIntent);
             }
         });
+
         //menu end
     }
 }
